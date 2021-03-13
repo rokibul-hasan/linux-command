@@ -1,0 +1,11 @@
+#To Create the Backup Archive:
+
+sudo tar -cvpzf yourbackupfilename.tar.gz --exclude=/path/to/backup/yourbackupfilename.tar.gz --one-file-system /
+
+#In the last part of the command a single forward slash will backup the entire root directory, or you can specify a certain directory to backup.
+
+#Restoring your backup:
+
+sudo tar -xvpzf /path/to/yourbackupfilename.tar.gz -C /directory/to/restore/to --numeric-owner
+
+#If restoring a complete root directory backup the last section of this command would simply be a forward slash /
