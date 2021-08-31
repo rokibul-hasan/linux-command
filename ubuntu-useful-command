@@ -1,0 +1,4 @@
+//How to increase lvm volume in ubuntu
+
+sudo lvextend -L+5GB /dev/ssd/volume_name
+sudo resize2fs /dev/ssd/volume_name
