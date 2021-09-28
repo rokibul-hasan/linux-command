@@ -1,0 +1,1 @@
+SELECT username,acctinterval,acctstarttime,acctupdatetime,TIMESTAMPDIFF(MINUTE, acctupdatetime, now() ) FROM `radacct` WHERE acctstoptime is null and TIMESTAMPDIFF(MINUTE, acctupdatetime, now() )>4
